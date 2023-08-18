@@ -12,14 +12,16 @@ export default function Login() {
       type="login"
       formProps={{
         initialValues: {
-          email: "info@refine.dev",
-          password: "refine-supabase",
+          email: "admin@nickyirawan.id",
+          password: "12345678",
         },
       }}
+      forgotPasswordLink={<div></div>}
+      registerLink={<div></div>}
       title={
         <ThemedTitleV2
           collapsed={false}
-          text="Shop Dashboard"
+          text="EWA Company"
           icon={<AppIcon />}
         />
       }

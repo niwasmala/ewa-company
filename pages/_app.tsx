@@ -4,7 +4,7 @@ import {
   ThemedSiderV2,
   ThemedTitleV2,
 } from "@refinedev/antd";
-import { GitHubBanner, Refine } from "@refinedev/core";
+import { Refine } from "@refinedev/core";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 import routerProvider, {
   DocumentTitleHandler,
@@ -21,6 +21,11 @@ import { appWithTranslation, useTranslation } from "next-i18next";
 import { authProvider } from "src/authProvider";
 import { AppIcon } from "src/components/app-icon";
 import { supabaseClient } from "src/utility";
+import {
+  UsergroupAddOutlined,
+  WalletOutlined,
+  MoneyCollectOutlined,
+} from '@ant-design/icons';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   noLayout?: boolean;
@@ -43,7 +48,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
         Title={({ collapsed }) => (
           <ThemedTitleV2
             collapsed={collapsed}
-            text="Shop Dashboard"
+            text="EWA Company"
             icon={<AppIcon />}
           />
         )}
@@ -63,7 +68,6 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
 
   return (
     <>
-      {/*<GitHubBanner />*/}
       <RefineKbarProvider>
         <ColorModeContextProvider>
           <Refine
@@ -74,23 +78,36 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout): JSX.Element {
             i18nProvider={i18nProvider}
             resources={[
               {
-                name: "blog_posts",
-                list: "/blog-posts",
-                create: "/blog-posts/create",
-                edit: "/blog-posts/edit/:id",
-                show: "/blog-posts/show/:id",
+                name: "employees",
+                list: "/employees",
+                create: "/employees/create",
+                edit: "/employees/edit/:id",
+                show: "/employees/show/:id",
                 meta: {
-                  canDelete: true,
+                  icon: <UsergroupAddOutlined />,
+                  canDelete: false,
                 },
               },
               {
-                name: "categories",
-                list: "/categories",
-                create: "/categories/create",
-                edit: "/categories/edit/:id",
-                show: "/categories/show/:id",
+                name: "salaries",
+                list: "/salaries",
+                create: "/salaries/create",
+                edit: "/salaries/edit/:id",
+                show: "/salaries/show/:id",
                 meta: {
-                  canDelete: true,
+                  icon: <WalletOutlined />,
+                  canDelete: false,
+                },
+              },
+              {
+                name: "withdrawals",
+                list: "/withdrawals",
+                edit: "/withdrawals/edit/:id",
+                show: "/withdrawals/show/:id",
+                meta: {
+                  icon: <MoneyCollectOutlined />,
+                  canCreate: false,
+                  canDelete: false,
                 },
               },
             ]}

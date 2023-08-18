@@ -2,21 +2,9 @@ import React from "react";
 
 export const AppIcon: React.FC = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 16 16"
-      fill="none"
-    >
-      <g fill="currentColor">
-        <path
-          fill-rule="evenodd"
-          d="M12.828.967A7.738 7.738 0 0 0 3.611 2.27a5.502 5.502 0 0 0-1.039 1.447L14 8.91V2.958c0-.827-.449-1.589-1.172-1.99zM9.5 4.001a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
-          clip-rule="evenodd"
-        />
-        <path d="M14 10.558 2.094 5.146A5.46 5.46 0 0 0 2 6.15v1.305l12 5.454zM2 9.85v-.747L14 14.557a1.5 1.5 0 0 1-2.108 1.314l-8.406-3.736A2.5 2.5 0 0 1 2 9.85z" />
-      </g>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+      <path d="M4.5 3.75a3 3 0 00-3 3v.75h21v-.75a3 3 0 00-3-3h-15z" />
+      <path fillRule="evenodd" d="M22.5 9.75h-21v7.5a3 3 0 003 3h15a3 3 0 003-3v-7.5zm-18 3.75a.75.75 0 01.75-.75h6a.75.75 0 010 1.5h-6a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" clipRule="evenodd" />
     </svg>
   );
 };

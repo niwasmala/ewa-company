@@ -1,10 +1,10 @@
-import { AntdListInferencer } from "@refinedev/inferencer/antd";
+import { AntdShowInferencer } from "@refinedev/inferencer/antd";
 import { GetServerSideProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { authProvider } from "src/authProvider";
 
-export default function CategoryList() {
-  return <AntdListInferencer />;
+export default function CategoryShow() {
+  return <AntdShowInferencer />;
 }
 
 export const getServerSideProps: GetServerSideProps<{}> = async (context) => {

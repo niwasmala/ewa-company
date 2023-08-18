@@ -108,53 +108,69 @@
   "dashboard": {
     "title": "Dashboard"
   },
-  "blog_posts": {
-    "blog_posts": "Blog Posts",
+  "salaries": {
+    "salaries": "Salaries",
     "fields": {
       "id": "Id",
-      "title": "Title",
-      "content": "Content",
-      "status": "Status",
-      "created_at": "Created At",
-      "categoryId": "Category"
+      "employee_name": "Employee Name",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "salary_total": "Total Salary"
     },
     "titles": {
-      "create": "Create Blog Post",
-      "edit": "Edit Blog Post",
-      "list": "Blog Posts",
-      "show": "Show Blog Post"
+      "create": "Create Salary",
+      "edit": "Edit Salary",
+      "list": "Salaries",
+      "show": "Show Salary"
     }
   },
-  "categories": {
-    "categories": "Categories",
+  "employees": {
+    "employees": "Employees",
     "fields": {
       "id": "Id",
-      "title": "Title",
+      "name": "Name",
       "created_at": "Created At"
     },
     "titles": {
-      "create": "Create Category",
-      "edit": "Edit Category",
-      "list": "Categories",
-      "show": "Show Category"
+      "create": "Create Employee",
+      "edit": "Edit Employee",
+      "list": "Employees",
+      "show": "Show Employee"
+    }
+  },
+  "withdrawals": {
+    "withdrawals": "Withdrawals",
+    "fields": {
+      "id": "Id",
+      "employee_name": "Employee Name",
+      "amount": "Amount",
+      "reason": "Reason",
+      "status": "Status",
+      "created_at": "Created At"
+    },
+    "titles": {
+      "create": "Create Withdrawal",
+      "edit": "Edit Withdrawal",
+      "list": "Withdrawals",
+      "show": "Show Withdrawal"
     }
   },
   "documentTitle": {
-    "default": "refine",
-    "suffix": " | refine",
-    "blog_posts": {
-      "list": "Blog Posts | refine",
-      "show": "#{{id}} Show Blog Post | refine",
-      "edit": "#{{id}} Edit Blog Post | refine",
-      "create": "Create new Blog Post | refine",
-      "clone": "#{{id}} Clone Blog Post | refine"
+    "default": "EWA Dashboard",
+    "suffix": " | EWA",
+    "employees": {
+      "list": "Employees | EWA",
+      "show": "#{{id}} Show Employee | EWA",
+      "edit": "#{{id}} Edit Employee | EWA",
+      "create": "Create New Employee | EWA",
+      "clone": "#{{id}} Clone Employee | EWA"
     },
-    "categories": {
-      "list": "Categories | refine",
-      "show": "#{{id}} Show Category | refine",
-      "edit": "#{{id}} Edit Category | refine",
-      "create": "Create new Category | refine",
-      "clone": "#{{id}} Clone Category | refine"
+    "salaries": {
+      "list": "Salaries | EWA",
+      "show": "#{{id}} Show Salary | EWA",
+      "edit": "#{{id}} Edit Salary | EWA",
+      "create": "Create New Salary | EWA",
+      "clone": "#{{id}} Clone Salary | EWA"
     }
   },
   "table": {
